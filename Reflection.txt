@@ -1,0 +1,16 @@
+Reflection for CarND PID Controller Project
+
+I decided to tune Kp, Ki, and Kd parameters manually
+and after some efforts set them like this:
+Kp = 0.3
+Ki = 0.0004
+Kd = 4.0.
+
+Ki parameter is the smallest one because it is multiplied by the sum
+of all cte. Sometimes the cte can quickly increase, so it is 
+not safe to make Ki large as the sreer_value can be overcorrected.
+
+Also I changed the throttle parameter from initial valuee of 0.3 to 0.15
+so the car started to move stablier (without oscillations).
+
+
